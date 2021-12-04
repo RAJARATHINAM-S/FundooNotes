@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    
+    height: 100vh;
+
+
+
+}
+.main{
+    border: 2px solid rgba(67, 72, 85, 0.349);
+    height: 70vh;
+width: 28vw;
+}
+.google{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+.mail{
+    width: 23vw;
+    padding-left: 10px;
+}
+.loginpage{
+    display: flex;
+    align-self: start;
+    padding: 20px;
+}

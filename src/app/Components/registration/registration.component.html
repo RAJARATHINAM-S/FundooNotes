@@ -1,0 +1,118 @@
+<div class="page" fxLayout="row" fxLayoutAlign="center center">
+
+    <div class="container" class="form-group">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="h-container">
+
+
+                <div class="maincontainer">
+                    <div>
+                        <ul class="google">
+                            <li style="color: blue;">F</li>
+                            <li style="color: red;">u</li>
+                            <li style="color: rgb(241, 241, 19);">n</li>
+                            <li style="color: blue;">d</li>
+                            <li style="color: green;">o</li>
+                            <li style="color: red;">o</li>
+                        </ul>
+                        <h2>Create Your Google Account</h2>
+                    </div>
+
+
+                    <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
+
+
+                        <p>
+                            <mat-form-field appearance="outline">
+                                <mat-label>firstName</mat-label>
+                                <input required matInput placeholder=" " formControlName="firstName">
+                                <mat-error>Enter first and last names</mat-error>
+
+
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field appearance="outline">
+                                <mat-label>last Name</mat-label>
+                                <input matInput placeholder="" formControlName="lastName">
+                                <mat-error>Enter first and last names</mat-error>
+
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div>
+
+
+                        <p>
+                            <mat-form-field class="email" appearance="outline">
+                                <mat-label>e-mail</mat-label>
+                                <input matInput placeholder=" " formControlName="email">
+                                <mat-error>mail is required</mat-error>
+                                <mat-hint>You can use letters,numbers & periods</mat-hint>
+                            </mat-form-field>
+                        </p>
+                        <button mat-button color="primary">Use my current emailaddress instead</button>
+                    </div>
+                    <div>
+                        <p fxLayout="row" fxLayoutAlign="space-between center">
+                            <mat-form-field appearance="outline">
+                                <mat-label>password</mat-label>
+                                <input matInput placeholder=" " formControlName="password">
+                                <mat-error>Enter password</mat-error>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline">
+                                <mat-label>confirmPassword</mat-label>
+                                <input matInput placeholder="Placeholder" formControlName="confirmPassword">
+                                <!-- <mat-error>Enter confirmPassword</mat-error> -->
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-hint>Use 8 or more charcters with a mix of letters,numbers & symbols</mat-hint>
+                        </p>
+
+
+
+
+                    </div>
+                    <div>
+
+                        <section>
+                            <mat-checkbox>Show password</mat-checkbox>
+                            <!-- <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox> -->
+                        </section>
+
+
+                    </div>
+
+                    <div class="Nextbox">
+                       <button mat-button color="primary" >Sign in instead</button>
+                        <button mat-raised-button color="primary"  >Next</button>
+
+                    </div>
+
+
+                </div>
+                <div class="logo" fxHide.xs>
+                    <img class="logoimg" src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" alt="">
+                    <p>One account. All of google</p>
+                    <p> working for you</p>
+                </div>
+
+            </div>
+        </form>
+
+
+        <div class="bottombutton">
+            <div> languages
+
+            </div>
+            <div>
+                <button mat-button color="grey">Help</button>
+                <button mat-button color="lightgrey">Privacy</button>
+                <button mat-button color="lightgrey">Terms</button>
+
+            </div>
+        </div>
+    </div>
+</div>

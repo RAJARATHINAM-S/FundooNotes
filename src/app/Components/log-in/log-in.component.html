@@ -1,0 +1,64 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+    <div class="main" fxLayout="column" fxLayoutAlign="space-evenly center">
+
+        <div fxLayout="column" fxLayoutAlign="space-evenly center">
+
+            <ul class="google">
+                <li style="color: blue;">F</li>
+                <li style="color: red;">u</li>
+                <li style="color: rgb(241, 241, 19);">n</li>
+                <li style="color: blue;">d</li>
+                <li style="color: green;">o</li>
+                <li style="color: red;">o</li>
+            </ul>
+            <h2 style="padding-top: 15px;">Sign in</h2>
+            Use your Google Account
+        </div>
+
+        <form [formGroup]="loginForm" >
+
+            <div class="loginpage" fxLayout="column" fxLayoutAlign="start start">
+                <p fxLayout="column" fxLayoutAlign="start start">
+                    <mat-form-field appearance="outline" class="mail">
+                        <mat-label>Email or Phone</mat-label>
+                        <input matInput placeholder="" formControlName="email">
+                        <mat-error>Enter an email or phone number</mat-error>
+
+                    </mat-form-field>
+                    <button mat-button color="primary">Forgot Email?</button>
+                </p>
+
+
+
+                <div fxLayout="column" fxLayoutAlign=" start">
+
+
+                    <p style="padding-left: 10px;"> Not your computer? Use Guest mode to sign in privately</p>
+
+                    <button mat-button color="primary">Learn more</button>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="space-between center" style="width:100%;">
+                    <button mat-button color="primary">Create account</button>
+                    <button mat-raised-button color="primary">Next</button>
+
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" style="width: 28vw;">
+        <mat-hint> languages</mat-hint>
+        <mat-hint>
+
+            <button mat-button color="grey">Help</button>
+            <button mat-button color="lightgrey">Privacy</button>
+            <button mat-button color="lightgrey">Terms</button>
+        </mat-hint>
+
+
+    </div>
+
+
+</div>
